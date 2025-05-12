@@ -1,27 +1,17 @@
 'use client';
 
-import React, { useState } from 'react'
+import React from 'react'
 import Logo from '../app/logo.svg'
 import Image from 'next/image'
-import { Menu, X } from 'lucide-react'
+import { Menu } from 'lucide-react'
 import {
     Drawer,
-    DrawerClose,
     DrawerContent,
-    DrawerDescription,
-    DrawerFooter,
-    DrawerHeader,
-    DrawerTitle,
     DrawerTrigger,
 } from "@/components/ui/drawer"
 
 import {
-    Card,
-    CardContent,
-    CardDescription,
-    CardFooter,
-    CardHeader,
-    CardTitle,
+    Card
 } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 
