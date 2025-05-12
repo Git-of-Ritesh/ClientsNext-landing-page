@@ -7,6 +7,9 @@ import { Menu } from 'lucide-react'
 import {
     Drawer,
     DrawerContent,
+    DrawerHeader,
+    DrawerTitle,
+    DrawerDescription,
     DrawerTrigger,
 } from "@/components/ui/drawer"
 
@@ -39,11 +42,15 @@ const navbar = () => {
                                 </Button>
                             </DrawerTrigger>
                             <DrawerContent>
-                                <div className='flex flex-col gap-1 sm:hidden'>
-                                    <Button variant="ghost" className='text-base font-normal hover:bg-transparent hover:shadow-none cursor-pointer justify-start'>About us</Button>
-                                    <Button variant="ghost" className='text-base font-normal hover:bg-transparent hover:shadow-none cursor-pointer justify-start'>Features</Button>
-                                    <Button variant="ghost" className='text-base font-normal hover:bg-transparent hover:shadow-none cursor-pointer justify-start'>Pricing</Button>
-                                    <Button variant="ghost" className='text-base font-normal hover:bg-transparent hover:shadow-none cursor-pointer justify-start '>Blogs</Button>
+                                <DrawerHeader>
+                                    <DrawerTitle></DrawerTitle>
+                                    <DrawerDescription></DrawerDescription>
+                                </DrawerHeader>
+                                <div className='flex flex-col pb-5 sm:hidden'>
+                                    <Button variant="ghost" className='text-lg font-normal hover:bg-transparent hover:shadow-none cursor-pointer justify-start'>About us</Button>
+                                    <Button variant="ghost" className='text-lg font-normal hover:bg-transparent hover:shadow-none cursor-pointer justify-start'>Features</Button>
+                                    <Button variant="ghost" className='text-lg font-normal hover:bg-transparent hover:shadow-none cursor-pointer justify-start'>Pricing</Button>
+                                    <Button variant="ghost" className='text-lg font-normal hover:bg-transparent hover:shadow-none cursor-pointer justify-start '>Blogs</Button>
                                 </div>
                             </DrawerContent>
                         </Drawer>
