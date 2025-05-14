@@ -4,7 +4,6 @@ import { MoveRight } from 'lucide-react'
 import Shnapshot from "../app/UI frontshot.png"
 import Image from 'next/image'
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
-import Avatar1 from '../app/avatar1.jpg'
 
 const Hero = () => {
     return (
