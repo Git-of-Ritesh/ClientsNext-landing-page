@@ -20,8 +20,8 @@ import { Button } from "@/components/ui/button"
 
 const navbar = () => {
     return (
-        <div className='px-0 sm:px-6 md:px-10 lg:px-20 xl:px-60 py-4'>
-            <Card className='py-3'>
+        <div className='px-0 sm:px-6 md:px-10 lg:px-20 xl:px-60 py-4 sticky top-0 z-50'>
+            <Card className='py-3 bg-transparent backdrop-blur-lg'>
                 <div className='flex justify-between px-4'>
                     <div className='flex justify-center items-center gap-1'>
                         <Image src={Logo} alt="ClientsNext Logo" className="w-8 h-8" />
