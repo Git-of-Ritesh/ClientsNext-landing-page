@@ -1,8 +1,5 @@
 import { Card, CardContent, CardHeader } from '@/components/ui/card'
-import { Globe } from 'lucide-react'
 import Image from 'next/image'
-import F1Image from "../app/F1image.png"
-import F2Image from "../app/F2image.png"
 import F3Image from "../app/ClientRMimage.png"
 import F4Image from "../app/salesPinelineImage.png"
 import F5Image from "../app/ReminderImage.png"
