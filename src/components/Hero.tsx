@@ -1,18 +1,27 @@
+'use client';
+
 import React from 'react'
 import { Button } from './ui/button'
 import { MoveRight } from 'lucide-react'
-import Shnapshot from "../app/UI frontshot.png"
+import Shnapshot from "../app/images/UI frontshot.png"
 import Image from 'next/image'
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 
 const Hero = () => {
+    const scrollCTA = () => {
+        const CTA = document.getElementById("JoinWaitlist")
+        if (CTA) {
+            CTA.scrollIntoView({ behavior: "smooth" });
+        }
+    }
+
     return (
         <div className='flex flex-col pt-10 sm:pt-40 justify-center items-center'>
             <h1 className='text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-semibold'>Your Clients. Your Control.</h1>
             <h1 className='text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-semibold'>One Powerful CRM.</h1>
             <h2 className='mt-6 text-sm sm:text-lg md:text-base lg:text-lg  text-center'>Built for freelancers, SaaS developers, and growing businesses — ClientsNext helps you manage leads, </h2>
             <h2 className='sm:text-lg md:text-base lg:text-lg text-sm text-center '>automate workflows, and scale your client relationships without the chaos.</h2>
-            <Button size='xl' className='mt-10 group'>Join waitlist<MoveRight className='ml-1 group-hover:ml-3' /></Button>
+            <Button size='xl' onClick={scrollCTA} className='mt-10 group cursor-pointer'>Join waitlist<MoveRight className='ml-1 group-hover:ml-3' /></Button>
             <div className='flex flex-col mt-10 gap-3 sm:gap-5 sm:flex-row justify-center items-center sm:border-2 sm:p-2 sm:rounded-4xl'>
                 <div className='flex -space-x-2 justify-center items-center'>
                     <Avatar className='ring-2 ring-white'>

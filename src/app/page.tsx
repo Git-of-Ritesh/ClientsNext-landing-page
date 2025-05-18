@@ -3,6 +3,8 @@ import Navbar from '@/components/navbar'
 import Hero from '@/components/Hero'
 import ProblemSection from '@/components/problemsection'
 import Features from '@/components/features'
+import JoinWaitlistCTA from '@/components/joinWaitlistCta'
+import Footer from '@/components/footer'
 
 const page = () => {
   return (
@@ -11,6 +13,8 @@ const page = () => {
       <Hero/>
       <ProblemSection/>
       <Features/>
+      <JoinWaitlistCTA/>
+      <Footer/>
       </div>
   )
 }

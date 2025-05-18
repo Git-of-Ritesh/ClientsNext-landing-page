@@ -19,6 +19,13 @@ import {
 import { Button } from "@/components/ui/button"
 
 const navbar = () => {
+    const scrollToCTA = () => {
+        const CTA = document.getElementById('JoinWaitlist');
+        if (CTA) {
+          CTA.scrollIntoView({ behavior: 'smooth' });
+        }
+      };
+
     return (
         <div className='px-0 sm:px-6 md:px-10 lg:px-20 xl:px-60 py-4 sticky top-0 z-50'>
             <Card className='py-3 bg-transparent backdrop-blur-lg'>
@@ -34,7 +41,7 @@ const navbar = () => {
                         <Button variant="ghost" className='text-base font-semibold hover:bg-transparent hover:shadow-none cursor-pointer '>Blogs</Button>
                     </div>
                     <div className='flex justify-center items-center gap-3'>
-                        <Button className='cursor-pointer'><h3 className='text-xs sm:text-sm font-semibold'>Join waitlist</h3></Button>
+                        <Button onClick={scrollToCTA} className='cursor-pointer'><h3 className='text-xs sm:text-sm font-semibold'>Join waitlist</h3></Button>
                         <Drawer>
                             <DrawerTrigger asChild>
                                 <Button variant='outline' size='icon' className='flex sm:hidden'>

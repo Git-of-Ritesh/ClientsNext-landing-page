@@ -1,13 +1,13 @@
 import { Card, CardContent, CardHeader } from '@/components/ui/card'
 import Image from 'next/image'
-import F3Image from "../app/ClientRMimage.png"
-import F4Image from "../app/salesPinelineImage.png"
-import F5Image from "../app/ReminderImage.png"
-import F6Image from '../app/RevenueImage.png'
+import F3Image from "../app/images/ClientRMimage.png"
+import F4Image from "../app/images/salesPinelineImage.png"
+import F5Image from "../app//images/ReminderImage.png"
+import F6Image from '../app/images/RevenueImage.png'
 
 export default function Features() {
     return (
-        <section className="dark:bg-muted/25 bg-zinc-50 py-16 md:py-32">
+        <section className="dark:bg-muted/25 bg-zinc-100 rounded-xl py-16 md:py-32">
             <div className="mx-auto max-w-5xl px-6 flex flex-col justify-center items-center">
                 <h1 className='text-lg sm:text-2xl font-semibold '>Features</h1>
                 <h1 className='text-2xl sm:text-5xl font-semibold'>Built to cover your needs</h1>
@@ -22,8 +22,6 @@ export default function Features() {
                         </CardHeader>
 
                         <div className="relative h-full pl-6 md:pl-12">
-                            {/* <div className="absolute -inset-6 [background:radial-gradient(75%_95%_at_50%_0%,transparent,var(--color-background)_100%)]"></div> */}
-
                             <div className="bg-background overflow-hidden rounded-tl-lg border-l border-t pl-2 pt-2">
                                 <Image
                                     src={F3Image}
@@ -42,7 +40,6 @@ export default function Features() {
 
                         <CardContent className="mt-auto h-fit">
                             <div className="relative mb-6 sm:mb-0">
-                                {/* <div className="absolute -inset-6 [background:radial-gradient(50%_75%_at_75%_50%,transparent,var(--color-background)_100%)]"></div> */}
                                 <div className="aspect-76/59 overflow-hidden rounded-r-lg border">
                                     <Image
                                         src={F4Image}
@@ -61,7 +58,6 @@ export default function Features() {
 
                         <CardContent className="mt-auto h-fit">
                             <div className="relative mb-6 sm:mb-0">
-                                {/* <div className="absolute -inset-6 [background:radial-gradient(50%_75%_at_75%_50%,transparent,var(--color-background)_100%)]"></div> */}
                                 <div className="aspect-76/59 overflow-hidden rounded-r-lg border">
                                     <Image
                                         src={F5Image}
@@ -83,8 +79,6 @@ export default function Features() {
                         </CardHeader>
 
                         <div className="relative h-full pl-6 md:pl-12">
-                            {/* <div className="absolute -inset-6 [background:radial-gradient(75%_95%_at_50%_0%,transparent,var(--color-background)_100%)]"></div> */}
-
                             <div className="bg-background overflow-hidden rounded-tl-lg border-l border-t pl-2 pt-2">
                                 <Image
                                     src={F6Image}
